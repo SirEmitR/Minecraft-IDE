@@ -1,0 +1,7 @@
+.archivero{
+    background-color: yellow;
+    width: 80vw;
+    height: 5vh;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
