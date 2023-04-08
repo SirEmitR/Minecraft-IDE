@@ -1,0 +1,43 @@
+.file{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.file img{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.file img:hover{
+    scale: 1.05;
+}
+.file form{
+    height: 100%;
+}
+
+.file form input{
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 2px 5px #4d4d4d;
+    background-color: #bcbcbc47;
+    animation: aparition 0.5s linear 1;
+    color: #FFF;
+}
+
+.file form input::placeholder{
+    color: #FFF;
+}
+
+@keyframes aparition {
+    0%{
+        transform: translateX(-20PX);
+        width: 0px;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        width: 100%;
+        opacity: 1;
+    }
+}

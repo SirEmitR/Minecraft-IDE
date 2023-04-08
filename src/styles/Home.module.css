@@ -1,4 +1,42 @@
-.navegador{
+.main{
+  background-image: url('../../public/tierra.png');
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.end{
+  background-image: url('../../public/netherack.png') !important;
+}
+.damage{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255,38,0);
+  background: linear-gradient(90deg, rgba(255,38,0,0.44870448179271705) 0%, rgba(255,0,0,0.10696778711484589) 5%, rgba(255,255,255,0) 53%, rgba(255,0,0,0.11537114845938379) 95%, rgba(255,0,0,0.36747198879551823) 100%);
+}
+
+@keyframes aparition {
+  0%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) {
+  .main{
+    flex-wrap: wrap;
+  }
+} 
+/* .navegador{
   width: 100vw;
   height: 5vh;
   background-color: rgb(255, 255, 255);
@@ -7,6 +45,8 @@
   align-items: center;
   background-image: url('../../public/pasto.jpg');
 }
+
+
 
 .logo, .rdclogo{
   height: 3vh;
@@ -118,16 +158,17 @@
   outline: none;
   padding: 10px;
   border: 1px transparent solid;
-  background-color: rgba(159, 159, 159, 0.3);
-  color: rgb(30 59 114);
-  border-radius: 4px;
+  background-color: #5c422dbc;
+  color: #FFF;
+  border-radius: 2px;
+
 }
 
 .archivo{
   justify-self: center;
   align-self: center;
   text-align: center;
-  color: rgb(30 59 114);
+  color: #FFF;
   font-size: 1em;
   font-weight: 300;
 }
@@ -228,4 +269,4 @@
 .nuevo{
   height: 4vh;
   width: auto;
-}
+} */

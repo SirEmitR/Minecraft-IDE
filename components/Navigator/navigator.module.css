@@ -1,0 +1,16 @@
+.navigator{
+    background-image: url('../../public/pasto.jpg');
+    padding: 20px;
+}
+.end{
+    background-image: url('../../public/netherbrick.png');
+    background-size: contain;
+}
+.navigator ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}

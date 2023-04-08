@@ -17,7 +17,6 @@ const Editor = ({actual}) => {
     >
         <Archivero />
         <textarea className={styles.codigo} onChange={e => setCoodigo(e.target.value)} value={codigo}>
-
         </textarea>
     </div>
   )

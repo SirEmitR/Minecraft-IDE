@@ -1,0 +1,60 @@
+.chestimage{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.chestimage:hover{
+    scale: 1.05;
+}
+
+.chestOpen{
+    width: max-content;
+    position: absolute;
+    background-color: #c6c6c6;
+    box-shadow: 1px 1px 5px #333;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.chestOpen h2{
+    color: #333;
+    padding: 10px;
+    padding-left: 0;
+    font-family: Oxanium, sans-serif;
+}
+
+.inventario{
+    box-shadow: inset 1px 1px 1px 1px #333;
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(4, 60px);
+    height: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    overflow-y: auto;
+}
+
+.cuadro{
+    background-color: #8b8b8b;
+    border: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cuadro span{
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(12, 12, 12, 0.774);
+    color: #FFF;
+    font-family: Oxanium, sans-serif;
+}

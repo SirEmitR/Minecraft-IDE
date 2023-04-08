@@ -1,0 +1,8 @@
+.clear{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.clear:hover{
+    scale: 1.05;
+}

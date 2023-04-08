@@ -1,0 +1,8 @@
+.portal{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.portal:hover{
+    scale: 1.05;
+}
