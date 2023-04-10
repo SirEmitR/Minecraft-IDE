@@ -35,8 +35,13 @@ export function CompileProvider ({children}){
     const [indexCube, setIndexCube] = useState(-1)
     const [drop, setDrop] = useState(null)
     const [inventario, setInventario] = useLocalStorage('inventario', [])
+
+    function executeCode(){
+        setExecute(true)
+    }
     function compileCode(){
         setCompiling(true)
+        setExecute(false)
         const result = semanticAnalisys()
         setTimeout(() =>{
             setCompileResult(result)
@@ -345,7 +350,9 @@ export function CompileProvider ({children}){
                 }else{
                     return result = [task.line, `Sentencia invalida se esperaba 'bloque' y un identificador` , false]
                 }
+                return result = [task.line, `Sentencia invalida se esperaba 'bloque' y un identificador` , false]
             }
+            
         }
                 
                 // case 'asign':
@@ -370,6 +377,7 @@ export function CompileProvider ({children}){
     }
 
     function clearSolution(){
+        setExecute(false)
         setCompile(false)
         setCompiling(false)
         setCompileResult(null)
@@ -406,7 +414,8 @@ export function CompileProvider ({children}){
         togglePortal,
         correctCompile,
         execute,
-        clearSolution
+        clearSolution,
+        executeCode
     }
     return(
         <CompileContext.Provider value={value}>
