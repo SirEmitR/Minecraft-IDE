@@ -42,7 +42,7 @@ const Craft = () => {
                 }} required={[{
                     id: 'madera',
                     image: Plank,
-                    count: 6
+                    count: 5
                 }]} />
                 <Crafteo styles={styles} object={{
                     id: 'stone pickaxe',
@@ -53,7 +53,7 @@ const Craft = () => {
                     {
                     id: 'madera',
                     image: Plank,
-                    count: 3
+                    count: 2
                     },
                     {
                     id: 'piedra',
@@ -70,7 +70,7 @@ const Craft = () => {
                     {
                     id: 'madera',
                     image: Plank,
-                    count: 3
+                    count: 2
                     },
                     {
                     id: 'hierro',
@@ -87,7 +87,7 @@ const Craft = () => {
                     {
                     id: 'madera',
                     image: Plank,
-                    count: 3
+                    count: 2
                     },
                     {
                     id: 'oro',
@@ -104,7 +104,7 @@ const Craft = () => {
                     {
                     id: 'madera',
                     image: Plank,
-                    count: 3
+                    count: 2
                     },
                     {
                     id: 'diamante',
