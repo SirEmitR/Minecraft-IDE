@@ -1,8 +1,9 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import RecetaBook from '../../../public/recetbook.png'
 import styles from './receta.module.css'
 const Receta = () => {
+  const [open,setOpen] = useState(false)
   return (
     <li className={styles.receta}>
         <Image 

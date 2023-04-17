@@ -61,7 +61,7 @@ const Craft = () => {
                     count: 3
                     }
                     ]} />
-                    <Crafteo styles={styles} object={{
+                <Crafteo styles={styles} object={{
                     id: 'iron pickaxe',
                     image: IronPickaxe,
                     type: 0,

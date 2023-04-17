@@ -16,13 +16,11 @@ const Navigator = () => {
   return (
     <nav className={`${styles.navigator} ${portalActive && styles.end}`}>
       <ul>
-        <File />
         <Health />
         <Wapon />
         <Compile />
         <Clear />
         <Execute />
-        <Receta />
         <Craft />
         <Chest />
         <Portal />
